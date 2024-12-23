@@ -1,0 +1,16 @@
+var 
+    h1,h2:text;
+    count,n,i,j,k:integer;
+
+begin
+    assign(h1,'TRIPLES.INP');
+    assign(h2,'TRIPLES.OUT');
+    reset(h1);
+    rewrite(h2);
+
+    read(h1,n);
+    write(h2,n + 1);
+    
+    close(h1);
+    close(h2);
+end.
